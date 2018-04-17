@@ -119,7 +119,7 @@ class OSClient(object):
                 'name': item['name'],
                 'region': self.region,
                 'service_type': item['type'],
-                'url': internalURL if internalURL is not None else publicURL,
+                'url': publicURL if publicURL is not None else internalURL,
                 'admin_url': adminURL,
             })
 
